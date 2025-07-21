@@ -17,7 +17,7 @@ const GetInTouch = () => {
   return (
     <section
       ref={containerRef}
-      className=" min-h-screen flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
+      className=" min-h-screen relative z-10 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
     >
      
 
@@ -25,7 +25,7 @@ const GetInTouch = () => {
         variants={fadeUp}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="text-center relative mb-8 z-10"
+        className="text-center  mb-8 "
       >
          <BlurText
             text="Let's Talk "
@@ -42,7 +42,7 @@ const GetInTouch = () => {
       </motion.div>
 
       {/* Grid */}
-      <div className="max-w-6xl mx-auto relative  grid md:grid-cols-2 gap-8 items-start z-10">
+      <div className="max-w-6xl mx-auto   grid md:grid-cols-2 gap-8 items-start ">
        
           <BookCall/>
 

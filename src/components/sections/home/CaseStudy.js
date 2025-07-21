@@ -192,7 +192,7 @@ const CaseStudy = () => {
             delay={350}
             animateBy="words"
             direction="top"
-            className="text-xl p-2 sm:text-2xl text-wrap md:text-2xl lg:text-3xl font-semibold text-center"
+            className="text-xl p-2 text-white dark:text-white sm:text-2xl text-wrap md:text-2xl lg:text-3xl font-semibold text-center"
           />
         </motion.div>
         <p className="text-base sm:text-lg text-center text-indigo-100 dark:text-indigo-300 font-semibold mb-4">

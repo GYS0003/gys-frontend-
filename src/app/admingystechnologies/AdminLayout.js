@@ -108,11 +108,11 @@ const navItems = [
     icon: <BiTestTube />,
     route: '/admingystechnologies/testimonials',
   },
-  {
-    name: 'Team Members',
-    icon: <HiOutlineUserGroup />,
-    route: '/admingystechnologies/our-team',
-  },
+  // {
+  //   name: 'Team Members',
+  //   icon: <HiOutlineUserGroup />,
+  //   route: '/admingystechnologies/our-team',
+  // },
   {
     name: 'Services & Technologies',
     icon: <MdMiscellaneousServices />,

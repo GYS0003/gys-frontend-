@@ -53,9 +53,9 @@ const PortfolioSection = () => {
           At GYS Technologies, we transform ideas into powerful digital products across various industries. We specialize in delivering responsive, SEO-optimized, and high-performance websites that serve as the backbone of our clients’ online presence.
         </p>
 
-        <p className="text-sm md:text-base text-purple-100 mb-4">
+        {/* <p className="text-sm md:text-base text-purple-100 mb-4">
           From custom-built CMS platforms to enterprise-grade portals, our web development team blends clean code with beautiful design to ensure every digital touchpoint is fast, scalable, and user-friendly.
-        </p>
+        </p> */}
 
         <ul className="list-disc pl-5 text-sm text-purple-100 space-y-2">
           <li>Custom mobile and web app development</li>
@@ -64,9 +64,9 @@ const PortfolioSection = () => {
           <li>Seamless user experiences with UI/UX excellence</li>
         </ul>
 
-        <p className="mt-6 text-sm text-purple-200">
+        {/* <p className="mt-6 text-sm text-purple-200">
           Explore our work to see how we bring ideas to life — combining strategic thinking, technical expertise, and stunning design.
-        </p>
+        </p> */}
       </motion.div>
 
 

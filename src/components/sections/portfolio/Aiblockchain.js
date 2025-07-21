@@ -16,7 +16,7 @@ const Aiblockchain = () => {
     <section
       ref={ref}
       id="ai-blockchain"
-      className="min-h-screen w-full flex flex-col justify-center relative z-10 py-16 px-4 sm:px-8 lg:px-20"
+      className="min-h-screen w-full flex flex-col justify-center relative z-10 py-22 px-4 sm:px-8 lg:px-20"
     >
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">

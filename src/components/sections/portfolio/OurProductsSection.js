@@ -15,9 +15,9 @@ const OurProductsSection = () => {
     <section
       ref={ref}
       id='our-products'
-      className="min-h-screen flex flex-col justify-center items-center px-6 md:px-16 py-16 relative z-10 transition-colors duration-300"
+      className="min-h-screen flex flex-col justify-center items-center px-6 md:px-16 py-22 relative z-10 transition-colors duration-300"
     >
-      <div className=" text-center mb-5 md:mb-12">
+      <div className=" text-center mb-5 md:mb-8">
         <h2 className="text-3xl  sm:text-4xl font-bold text-gray-800 dark:text-white">
           Our Own Products
         </h2>

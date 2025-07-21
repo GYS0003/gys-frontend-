@@ -45,24 +45,28 @@ const Banner = () => {
             className="text-3xl sm:text-3xl text-wrap md:text-4xl lg:text-5xl font-semibold text-center"
           />
 
-          {/* Running Gradient Text Reveal */}
-          <motion.span
-            className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug bg-gradient-to-r from-pink-500 via-orange-400 to-indigo-500 bg-clip-text text-transparent inline-block"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            style={{
-              backgroundSize: "300% 300%",
-              animation: "gradientShift 6s linear infinite",
-              display: "inline-block",
-            }}
-          >
-            {text.map((char, index) => (
-              <motion.span key={index} variants={letterVariants}>
-                {char === " " ? "\u00A0" : char}
-              </motion.span>
-            ))}
-          </motion.span>
+         <motion.span
+  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight sm:leading-snug bg-gradient-to-r from-pink-500 via-orange-400 to-indigo-500 bg-clip-text text-transparent inline-block"
+  variants={containerVariants}
+  initial="hidden"
+  animate="visible"
+  style={{
+    backgroundSize: "200% 200%", // Reduced for better mobile performance
+    animation: "gradientShift 8s linear infinite", // Slower animation for mobile
+    display: "inline-block",
+    wordBreak: "break-word", // Prevent overflow on small screens
+  }}
+>
+  {text.map((char, index) => (
+    <motion.span 
+      key={index} 
+      variants={letterVariants}
+      style={{ display: 'inline-block' }} // Fix for mobile line breaks
+    >
+      {char === " " ? "\u00A0" : char}
+    </motion.span>
+  ))}
+</motion.span>
         </motion.div>
 
         {/* Subheading */}

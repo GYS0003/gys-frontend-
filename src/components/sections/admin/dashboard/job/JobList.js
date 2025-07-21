@@ -38,6 +38,24 @@ const JobList = () => {
     }
   };
 
+  const getDownloadUrl = (url, filename = 'resume.pdf') => {
+    if (!url) return null;
+
+    const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+
+    // If it's already a full Cloudinary URL
+    if (url.includes('res.cloudinary.com')) {
+      // Extract the public ID
+      const parts = url.split('/upload/');
+      if (parts.length < 2) return null;
+      const publicId = parts[1].split('/').slice(1).join('/');
+
+      return `https://res.cloudinary.com/${CLOUD_NAME}/raw/upload/fl_attachment:${filename}/${publicId}`;
+    }
+
+    // If it's just the public ID
+    return `https://res.cloudinary.com/${CLOUD_NAME}/raw/upload/fl_attachment:${filename}/${url}`;
+  };
 
   return (
     <section className="pt-16 px-4 md:px-12 max-w-6xl mx-auto text-black dark:text-white">

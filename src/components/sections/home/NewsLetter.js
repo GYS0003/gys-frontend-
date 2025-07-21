@@ -17,9 +17,9 @@ const NewsLetter = () => {
   return (
     <section
       ref={ref}
-      className=" min-h-screen flex flex-col justify-center  items-center  transition-colors duration-300"
+      className=" min-h-screen relative z-10 flex flex-col justify-center gap-14 sm:gap-14 lg:gap-8 items-center  transition-colors duration-300"
     >
-      <div className="w-full overflow-hidden pt-16 pb-6 sm:pb-6 md:pb-12 px-4">
+      <div className="w-full overflow-hidden  px-4">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ const NewsLetter = () => {
 const LogoCard = ({ src }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className="min-w-[160px] h-[120px] flex justify-center items-center bg-white rounded-lg p-2"
+    className="min-w-[80px] h-[60px] sm:min-w-[120px] sm:h-[80px] md:min-w-[160px] md:h-[100px] lg:min-w-[180px] lg:h-[110px] flex justify-center items-center p-2 dark:shadow-indigo-500/20 bg-white rounded-lg"
   >
     <Image
       src={src}

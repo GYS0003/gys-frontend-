@@ -108,7 +108,7 @@ const KeyServices = () => {
         }}
       >
         {services.map((item, idx) => (
-          <div key={idx} className="w-[250px] sm:w-[300px] md:w-[350px] flex-shrink-0 bg-white/10 dark:bg-white/5 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200 dark:border-white/10 transition-shadow duration-300">
+          <div key={idx} className="w-[250px] sm:w-[300px] md:w-[350px] flex-shrink-0 bg-white/10 dark:bg-white/5 backdrop-blur-md rounded-2xl  border border-gray-200 dark:border-white/10 transition-shadow duration-300">
             <Link
               href={'/services#services'}
             >
