@@ -50,16 +50,16 @@ const AboutGYS = () => {
 
           <motion.div variants={containerVariants} className="space-y-6 text-lg">
             <motion.p variants={itemVariants}>
-              GYS Technologies is a software company dedicated to transforming ideas into powerful digital solutions. With a passion for innovation and a commitment to excellence, we specialize in Web Development, App Development, UI/UX Design, and custom software solutions tailored to your business needs.
+              {`GYS Technologies is a software company dedicated to transforming ideas into powerful digital solutions. With a passion for innovation and a commitment to excellence, we specialize in Web Development, App Development, UI/UX Design, and custom software solutions tailored to your business needs.`}
             </motion.p>
 
             <motion.p variants={itemVariants}>
-              At GYS Technologies, we don&apos;t just build software — we craft experiences that drive growth, enhance user engagement, and empower businesses to scale.
+             {` At GYS Technologies, we don't just build software — we craft experiences that drive growth, enhance user engagement, and empower businesses to scale.`}
             </motion.p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-12 flex justify-center">
-            <GradientButton as={"link"} href={'/aboutus/lets-talk'}>Let's Talk</GradientButton>
+            <GradientButton as={"link"} href={'/aboutus/lets-talk'}>{`Let's Talk`}</GradientButton>
             
           </motion.div>
         </motion.div>
