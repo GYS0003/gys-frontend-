@@ -54,7 +54,7 @@ const StatsSection = () => {
   }, []);
   return (
     <section data-aos="fade-up"
-      className="relative z-10 min-h-screen w-full bg-gradient-to-b from-pink-500 to-purple-500 dark:bg-none flex flex-col justify-center items-center md:py-4 py-16 select-none px-4 md:px-10 lg:px-20 ">
+      className="relative z-10  w-full bg-gradient-to-b from-pink-500 to-purple-500 dark:bg-none flex flex-col justify-center items-center md:py-4 py-16 select-none px-4 md:px-10 lg:px-20 ">
 
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,17 +89,9 @@ const StatsSection = () => {
           ))}
         </motion.div>
 
-        {/* Optional CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.6 }}
-          className="mt-16 text-center"
-        >
-        </motion.div>
+      
       </div>
-          <GradientButton as={'link'} href={'/portfolio'}>See Our Success Stories</GradientButton>
+          <GradientButton className='mt-5' as={'link'} href={'/portfolio'}>See Our Success Stories</GradientButton>
     </section>
   );
 };

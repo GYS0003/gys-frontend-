@@ -39,7 +39,7 @@ const PortfolioSection = () => {
   return (
     <section
       ref={ref}
-      className="min-h-screen relative z-10 px-6 py-20 text-gray-800 dark:text-white flex flex-col md:flex-row items-center justify-center gap-10"
+      className=" relative z-10 px-6 py-30 text-gray-800 dark:text-white flex flex-col md:flex-row items-center justify-center gap-10"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}

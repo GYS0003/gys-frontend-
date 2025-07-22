@@ -1,6 +1,7 @@
 'use client'
 
 import Header from '@/components/layout/header/Header'
+import Footer from '../layout/footer/Footer'
 
 const PageWrapper = ({ children }) => {
 
@@ -11,6 +12,7 @@ const PageWrapper = ({ children }) => {
         </div>
       <Header />
       <main className="min-h-screen scrollbar-hide">{children}</main>
+
       </div>
   )
 }

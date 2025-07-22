@@ -177,15 +177,15 @@ const CaseStudy = () => {
     <section
       data-aos="fade-up"
       className="  relative z-10 bg-gradient-to-b from-purple-800 to-purple-900
- dark:bg-none    flex flex-col  items-center  overflow-hidden px-4 md:px-10 lg:px-20"
+ dark:bg-none    flex flex-col md:border-none border border-white/20 dark:border-white/20 mx-2 my-2 p-5 rounded-3xl items-center  overflow-hidden px-4 md:px-10 lg:px-20"
     >
-      <div className=" w-full  md:mt-4 max-w-6xl">
+      <div className=" w-full   max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center my-6"
+          className="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-center my-3"
         >
           <BlurText
             text="Case Studies"

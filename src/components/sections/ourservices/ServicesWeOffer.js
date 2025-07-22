@@ -47,7 +47,7 @@ const ServicesWeOffer = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen w-full flex flex-col justify-center items-center text-gray-800 dark:text-white select-none px-4 py-16 sm:py-16 md:py-10 lg:py-14 xl:py-22 md:px-10 lg:px-20"
+      className="relative  w-full flex flex-col justify-center items-center text-gray-800 dark:text-white select-none px-4 py-16 sm:py-16 md:py-10 lg:py-14 xl:py-22 md:px-10 lg:px-20"
     >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}

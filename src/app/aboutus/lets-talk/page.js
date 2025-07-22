@@ -57,11 +57,11 @@ export const metadata = {
 export default function Page() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] scrollbar-hide">
-      <PageWrapper>
-
-      <main className="min-h-screen scrollbar-hide"> <BookCall /></main>
+      {/* <PageWrapper> */}
+      <Header/>
+      <BookCall />
        
-      </PageWrapper>
+      {/* </PageWrapper> */}
     </div>
   );
 }
