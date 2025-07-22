@@ -39,17 +39,17 @@ export default function JobDetail() {
   const validateForm = () => {
     const newErrors = {};
     let isValid = true;
-    
+
     // Clear previous errors
     setErrors({});
     setFileError('');
-    
+
     // Name validation
     if (!formData.fullName.trim()) {
       newErrors.fullName = 'Full name is required';
       isValid = false;
     }
-    
+
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email.trim()) {
@@ -59,7 +59,7 @@ export default function JobDetail() {
       newErrors.email = 'Please enter a valid email address';
       isValid = false;
     }
-    
+
     // Phone validation
     const phoneRegex = /^[0-9]{10,15}$/;
     if (!formData.phoneNumber.trim()) {
@@ -69,25 +69,25 @@ export default function JobDetail() {
       newErrors.phoneNumber = 'Please enter a valid phone number';
       isValid = false;
     }
-    
+
     // URL validations
     const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
-    
+
     if (formData.portfolioLink && !urlRegex.test(formData.portfolioLink)) {
       newErrors.portfolioLink = 'Please enter a valid URL';
       isValid = false;
     }
-    
+
     if (formData.linkedinUrl && !formData.linkedinUrl.includes('linkedin.com')) {
       newErrors.linkedinUrl = 'Please enter a valid LinkedIn URL';
       isValid = false;
     }
-    
+
     if (formData.githubUrl && !formData.githubUrl.includes('github.com')) {
       newErrors.githubUrl = 'Please enter a valid GitHub URL';
       isValid = false;
     }
-    
+
     // File validation
     if (!formData.resume) {
       setFileError('Resume is required');
@@ -99,19 +99,19 @@ export default function JobDetail() {
       setFileError('File size exceeds 5MB limit');
       isValid = false;
     }
-    
+
     setErrors(newErrors);
     return isValid;
   };
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    
+
     // Clear error when user types
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
-    
+
     if (name === 'resume') {
       setFormData(prev => ({ ...prev, resume: files[0] }));
       if (fileError) setFileError('');
@@ -122,12 +122,12 @@ export default function JobDetail() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Validate form
     if (!validateForm()) {
       return;
     }
-    
+
     setLoading(true);
     setSuccessMsg('');
 
@@ -162,8 +162,8 @@ export default function JobDetail() {
 
     } catch (err) {
       console.error('Application error:', err);
-      setErrors({ 
-        submit: 'Failed to submit application. Please try again later.' 
+      setErrors({
+        submit: 'Failed to submit application. Please try again later.'
       });
     } finally {
       setLoading(false);
@@ -231,22 +231,22 @@ export default function JobDetail() {
               <span className="text-sm text-gray-500 dark:text-gray-400">Job Title</span>
               <span className="font-medium">{job.title}</span>
             </div>
-            
+
             <div className="flex flex-col">
               <span className="text-sm text-gray-500 dark:text-gray-400">Position Type</span>
               <span className="font-medium">{job.type}</span>
             </div>
-            
+
             <div className="flex flex-col">
               <span className="text-sm text-gray-500 dark:text-gray-400">Job ID</span>
               <span className="font-medium">{job.id}</span>
             </div>
-            
+
             <div className="flex flex-col">
               <span className="text-sm text-gray-500 dark:text-gray-400">Career Area</span>
               <span className="font-medium">{job.stack}</span>
             </div>
-            
+
             <div className="flex flex-col">
               <span className="text-sm text-gray-500 dark:text-gray-400">Location</span>
               <span className="font-medium">{job.location}</span>
@@ -275,7 +275,7 @@ export default function JobDetail() {
             Complete the form below to submit your application
           </p>
         </div>
-        
+
         <form
           onSubmit={handleSubmit}
           encType="multipart/form-data"
@@ -286,40 +286,40 @@ export default function JobDetail() {
               <p className="text-red-500 text-center">{errors.submit}</p>
             </div>
           )}
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {[ 
-              { 
-                name: 'fullName', 
-                placeholder: 'Full Name', 
+            {[
+              {
+                name: 'fullName',
+                placeholder: 'Full Name',
                 required: true,
                 error: errors.fullName
               },
-              { 
-                name: 'email', 
-                type: 'email', 
-                placeholder: 'Email Address', 
+              {
+                name: 'email',
+                type: 'email',
+                placeholder: 'Email Address',
                 required: true,
                 error: errors.email
               },
-              { 
-                name: 'phoneNumber', 
-                placeholder: 'Phone Number', 
+              {
+                name: 'phoneNumber',
+                placeholder: 'Phone Number',
                 required: true,
                 error: errors.phoneNumber
               },
-              { 
-                name: 'portfolioLink', 
+              {
+                name: 'portfolioLink',
                 placeholder: 'Portfolio Link (Optional)',
                 error: errors.portfolioLink
               },
-              { 
-                name: 'linkedinUrl', 
+              {
+                name: 'linkedinUrl',
                 placeholder: 'LinkedIn URL (Optional)',
                 error: errors.linkedinUrl
               },
-              { 
-                name: 'githubUrl', 
+              {
+                name: 'githubUrl',
                 placeholder: 'GitHub URL (Optional)',
                 error: errors.githubUrl
               },
@@ -332,11 +332,10 @@ export default function JobDetail() {
                   onChange={handleChange}
                   placeholder={field.placeholder}
                   required={field.required || false}
-                  className={`w-full p-3 border ${
-                    field.error 
-                      ? 'border-red-500' 
+                  className={`w-full p-3 border ${field.error
+                      ? 'border-red-500'
                       : 'border-gray-300 dark:border-white/20'
-                  } rounded bg-white dark:bg-transparent text-black dark:text-white`}
+                    } rounded bg-white dark:bg-transparent text-black dark:text-white`}
                 />
                 {field.error && (
                   <p className="text-red-500 text-sm">{field.error}</p>
@@ -356,10 +355,14 @@ export default function JobDetail() {
               name="resume"
               accept=".pdf"
               onChange={handleChange}
-              className={`w-full p-2 border ${
-                fileError ? 'border-red-500' : 'border-gray-300 dark:border-white/20'
-              } rounded bg-white dark:bg-transparent text-black dark:text-white`}
+              className={`w-full p-2 border ${fileError ? 'border-red-500' : 'border-gray-300 dark:border-white/20'
+                } rounded bg-white dark:bg-transparent text-black dark:text-white`}
             />
+            <p className="max-w-[350px] lg:max-w-[600px] text-xs text-white/70 mt-2">
+              <em className="not-italic text-white/70">
+                Note: Only upload documents stored locally on your device. Files from cloud services (e.g., Google Drive, iCloud) are not supported. The maximum allowed file size is <strong className="text-white">10MB</strong>.
+              </em>
+            </p>
             {fileError && (
               <p className="text-red-500 text-sm mt-1">{fileError}</p>
             )}
@@ -384,7 +387,7 @@ export default function JobDetail() {
               )}
             </GradientButton>
           </div>
-          
+
           {successMsg && (
             <div className="mt-6 bg-green-500/10 border border-green-500 rounded-lg p-4">
               <p className="text-green-500 text-center font-medium">{successMsg}</p>
