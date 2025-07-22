@@ -399,12 +399,7 @@ const BookCall = () => {
                     )}
 
                     <div className="flex justify-end mt-6">
-                        {/* <button
-                            onClick={() => setVerified(false)}
-                            className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-md shadow-lg"
-                        >
-                            Back
-                        </button> */}
+                       
                         <GradientButton
                             onClick={handleBookMeeting}
                             disabled={loading}
@@ -430,7 +425,7 @@ const BookCall = () => {
                         <h2 className="text-2xl md:text-3xl text-white font-semibold mt-4">
                             Meeting Scheduled Successfully!
                         </h2>
-                        <p className="text-green-400 mt-2">We've sent the details to your email</p>
+                        <p className="text-green-400 mt-2">{`We've sent the details to your email`}</p>
                     </div>
                     
                     <div className="bg-white/5 border border-white/10 rounded-xl p-5">

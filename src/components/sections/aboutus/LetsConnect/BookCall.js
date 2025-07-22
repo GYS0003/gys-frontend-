@@ -428,7 +428,7 @@ const BookCall = () => {
                         <h2 className="text-2xl md:text-3xl text-white font-semibold mt-4">
                             Meeting Scheduled Successfully!
                         </h2>
-                        <p className="text-green-400 mt-2">We've sent the details to your email</p>
+                        <p className="text-green-400 mt-2">{`We've sent the details to your email`}</p>
                     </div>
                     
                     <div className="bg-white/5 border border-white/10 rounded-xl p-5">

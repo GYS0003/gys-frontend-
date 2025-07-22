@@ -389,7 +389,7 @@ export default function JobDetail() {
             <div className="mt-6 bg-green-500/10 border border-green-500 rounded-lg p-4">
               <p className="text-green-500 text-center font-medium">{successMsg}</p>
               <p className="text-gray-600 dark:text-gray-300 text-center mt-2">
-                We'll review your application and get back to you soon.
+                {`We'll review your application and get back to you soon.`}
               </p>
             </div>
           )}
