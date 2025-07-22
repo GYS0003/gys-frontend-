@@ -176,8 +176,8 @@ const CaseStudy = () => {
   return (
     <section
       data-aos="fade-up"
-      className=" min-h-screen  relative z-10 bg-gradient-to-b from-purple-800 to-purple-900
- dark:bg-none   dark:shadow-2xl flex flex-col justify-center items-center  overflow-hidden px-4 md:px-10 lg:px-20"
+      className="  relative z-10 bg-gradient-to-b from-purple-800 to-purple-900
+ dark:bg-none    flex flex-col  items-center  overflow-hidden px-4 md:px-10 lg:px-20"
     >
       <div className=" w-full  md:mt-4 max-w-6xl">
         <motion.div

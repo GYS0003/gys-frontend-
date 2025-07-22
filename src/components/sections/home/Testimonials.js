@@ -78,13 +78,13 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center py-20 relative z-10 overflow-hidden">
+    <section className="  py-16 relative z-10 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-center my-6"
+        className="relative z-10 text-2xl sm:text-3xl md:text-4xl font-bold text-center "
       >
          <BlurText
             text="Testimonials "

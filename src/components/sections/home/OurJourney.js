@@ -65,7 +65,7 @@ const OurJourney = () => {
   };
 
   return (
-    <section className="relative z-10 min-h-screen flex flex-col justify-center gap-y-10 items-center   px-4 md:px-10 lg:px-20 pt-16  text-gray-900 dark:text-white">
+    <section className="relative z-10   gap-y-10   px-4 md:px-10 lg:px-20 pt-16  text-gray-900 dark:text-white">
       <div ref={ref} className="relative z-10 text-xl md:text-2xl lg:text-3xl font-bold text-center mb-6 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

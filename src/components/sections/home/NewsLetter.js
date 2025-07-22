@@ -17,7 +17,7 @@ const NewsLetter = () => {
   return (
     <section
       ref={ref}
-      className=" min-h-screen relative z-10 flex flex-col justify-center gap-14 sm:gap-14 lg:gap-8 items-center  transition-colors duration-300"
+      className="  relative z-10   transition-colors duration-300"
     >
       <div className="w-full overflow-hidden  px-4">
         {/* Heading */}
@@ -55,7 +55,7 @@ const NewsLetter = () => {
           </motion.div>
         </div>
       </div>
-      <div className=" px-4 w-full">
+      <div className="mt-16 px-4 w-full">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

@@ -70,7 +70,7 @@ const ServicesProvided = () => {
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
-      className="relative min-h-screen w-full py-16 flex flex-col justify-center items-center px-4 md:px-10 lg:px-20"
+      className="relative  w-full py-16 flex flex-col justify-center items-center px-4 md:px-10 lg:px-20"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black pointer-events-none hidden dark:block" />
       <div className="z-10 relative text-xl p-2 sm:text-2xl md:text-3xl font-semibold text-center text-primary">

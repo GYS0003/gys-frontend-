@@ -75,7 +75,7 @@ const KeyServices = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center z-10  px-4 text-gray-900 dark:text-gray-100">
+    <section className="relative  z-10  px-4 text-gray-900 dark:text-gray-100">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

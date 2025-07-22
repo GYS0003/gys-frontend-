@@ -17,7 +17,7 @@ const GetInTouch = () => {
   return (
     <section
       ref={containerRef}
-      className=" min-h-screen relative z-10 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
+      className="  relative z-10 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
     >
      
 

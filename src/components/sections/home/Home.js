@@ -16,68 +16,68 @@ const Home = () => {
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef(null);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  // useEffect(() => {
+  //   const container = containerRef.current;
+  //   if (!container) return;
 
-    const handleWheel = (e) => {
-      e.preventDefault();
+  //   const handleWheel = (e) => {
+  //     e.preventDefault();
       
-      if (isScrollingRef.current) return;
-      isScrollingRef.current = true;
+  //     if (isScrollingRef.current) return;
+  //     isScrollingRef.current = true;
 
-      const direction = Math.sign(e.deltaY);
-      const currentScroll = container.scrollTop;
-      const windowHeight = window.innerHeight;
-      const currentSection = Math.round(currentScroll / windowHeight);
+  //     const direction = Math.sign(e.deltaY);
+  //     const currentScroll = container.scrollTop;
+  //     const windowHeight = window.innerHeight;
+  //     const currentSection = Math.round(currentScroll / windowHeight);
       
-      // Calculate target section with boundary checks
-      let targetSection = currentSection + direction;
-      targetSection = Math.max(0, Math.min(targetSection, container.children.length - 1));
+  //     // Calculate target section with boundary checks
+  //     let targetSection = currentSection + direction;
+  //     targetSection = Math.max(0, Math.min(targetSection, container.children.length - 1));
       
-      // Only scroll if we're moving to a new section
-      if (targetSection !== currentSection) {
-        container.scrollTo({
-          top: targetSection * windowHeight,
-          behavior: 'smooth'
-        });
-      }
+  //     // Only scroll if we're moving to a new section
+  //     if (targetSection !== currentSection) {
+  //       container.scrollTo({
+  //         top: targetSection * windowHeight,
+  //         behavior: 'smooth'
+  //       });
+  //     }
 
-      // Clear any existing timeout
-      if (scrollTimeoutRef.current) {
-        clearTimeout(scrollTimeoutRef.current);
-      }
+  //     // Clear any existing timeout
+  //     if (scrollTimeoutRef.current) {
+  //       clearTimeout(scrollTimeoutRef.current);
+  //     }
 
-      // Set timeout to reset scrolling state
-      scrollTimeoutRef.current = setTimeout(() => {
-        isScrollingRef.current = false;
-      }, 400); // Reduced timeout for quicker response
-    };
+  //     // Set timeout to reset scrolling state
+  //     scrollTimeoutRef.current = setTimeout(() => {
+  //       isScrollingRef.current = false;
+  //     }, 400); // Reduced timeout for quicker response
+  //   };
 
-    container.addEventListener('wheel', handleWheel, { passive: false });
+  //   container.addEventListener('wheel', handleWheel, { passive: false });
     
-    return () => {
-      container.removeEventListener('wheel', handleWheel);
-      if (scrollTimeoutRef.current) {
-        clearTimeout(scrollTimeoutRef.current);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     container.removeEventListener('wheel', handleWheel);
+  //     if (scrollTimeoutRef.current) {
+  //       clearTimeout(scrollTimeoutRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div
-      ref={containerRef}
-      className="h-screen overflow-y-scroll scrollbar-hide snap-y snap-mandatory scroll-smooth"
-      style={{ scrollBehavior: 'smooth' }}
+      // ref={containerRef}
+      className="h-screen overflow-y-scroll "
+      // style={{ scrollBehavior: 'smooth' }}
     >
-      <section className="snap-start min-h-screen"><Banner /></section>
-      <section className="snap-start min-h-screen"><ServicesProvided /></section>
-      <section className="snap-start min-h-screen"><KeyServices /></section>
-      <section className="snap-start min-h-screen"><OurJourney /></section>
-      <section className="snap-start min-h-screen"><CaseStudy /></section>
-      <section className="snap-start min-h-screen"><Testimonials /></section>
-      <section className="snap-start min-h-screen"><NewsLetter /></section>
-      <section className="snap-start min-h-screen"><LetsTalk /></section>
+      <section className="snap-start"><Banner /></section>
+      <section className="snap-start"><ServicesProvided /></section>
+      <section className="snap-start "><KeyServices /></section>
+      <section className="snap-start "><OurJourney /></section>
+      <section className="snap-start "><CaseStudy /></section>
+      <section className="snap-start "><Testimonials /></section>
+      <section className="snap-start "><NewsLetter /></section>
+      <section className="snap-start "><LetsTalk /></section>
       <section className="snap-start "><Footer /></section>
     </div>
   );
