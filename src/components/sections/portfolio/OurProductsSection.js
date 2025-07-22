@@ -59,7 +59,7 @@ const OurProductsSection = () => {
         {/* </Link> */}
 
         {/* Product 2 */}
-        {/* <Link href="/samsara-studio"> */}
+        <Link href="https://www.samsarastudio.co" passHref>
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -87,7 +87,7 @@ const OurProductsSection = () => {
               <li>Performance tracking & analytics</li>
             </ul>
           </motion.div>
-        {/* </Link> */}
+        </Link>
       </div>
     </section>
   );
