@@ -7,7 +7,7 @@ const PageWrapper = ({ children }) => {
 
   return (
     < div className='scrollbar-hide '>
-        <div className="absolute inset-0 flex justify-center items-center  z-0">
+        <div className="absolute inset-0   z-0">
           <div className="w-full h-full bg-white dark:bg-black bg-gradient-dark-figma " />
         </div>
       <Header />
