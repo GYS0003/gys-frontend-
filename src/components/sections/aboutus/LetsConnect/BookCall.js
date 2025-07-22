@@ -182,7 +182,7 @@ const BookCall = () => {
     };
 
     return (
-        <div ref={ref} className='relative   z-10 my-30  max-w-2xl'>
+        <div ref={ref} className='relative bg-none  flex justify-center items-center z-10 py-30  '>
             {!verified ? (
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
