@@ -181,7 +181,9 @@ const ServicesProvided = () => {
           >
             <GradientButton
               as="link"
-              href="/tech"
+              href="https://www.samsarastudio.co"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 font-bold text-lg"
               glowColor="purple"
             >

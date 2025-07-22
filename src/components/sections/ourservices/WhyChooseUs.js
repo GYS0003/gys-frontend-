@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
   return (
     <section
       ref={ref}
-      className="min-h-screen justify-center   px-4 py-16 relative z-10 text-gray-800 dark:text-white flex flex-col items-center"
+      className=" justify-center   px-4 py-30 relative z-10 text-gray-800 dark:text-white flex flex-col items-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

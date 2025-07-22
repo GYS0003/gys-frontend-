@@ -99,7 +99,7 @@ const MeetingList = () => {
             </h3>
 
             <table className="min-w-full text-sm table-auto border border-gray-300 dark:border-gray-700">
-              <thead className="bg-gray-100 dark:bg-gray-700">
+              <thead className="bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-700">
                 <tr>
                   <th className="p-3 border border-gray-300 dark:border-gray-700 text-left">#</th>
                   <th className="p-3 border border-gray-300 dark:border-gray-700 text-left">Service</th>

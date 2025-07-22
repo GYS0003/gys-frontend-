@@ -8,11 +8,11 @@ import BgBanner from "@/assets/BgBanner.jpg";
 const Footer = () => {
   return (
     <section className="relative w-full   text-gray-900 dark:text-gray-100 select-none ">
-      <div className="dark:hidden  absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-b from-[rgba(53,47,147,1)] to-[rgba(181,0,185,1)] dark:bg-transparent" />
+      <div className="  absolute inset-0 z-0">
+        <div className="w-full h-full bg-gradient-to-b from-[rgba(53,47,147,1)] to-[rgba(181,0,185,1)] dark:bg-none" />
       </div>
 
-      <div className="px-8 z-10 relative  py-16">
+      <div className="px-8 z-10 relative  pt-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Logo & Description */}
@@ -38,8 +38,8 @@ const Footer = () => {
                 {[
                   { icon: "ri-instagram-line", link: "https://www.instagram.com/samsara.studio_/" },
                   { icon: "ri-facebook-circle-line", link: "https://facebook.com" },
-                  { icon: "ri-reddit-line", link: "https://wa.me/919855575465" },
-                  { icon: "ri-telegram-line", link: "tel:9855575465" },
+                  { icon: "ri-reddit-line", link: "https://wa.me/918273370028" },
+                  { icon: "ri-telegram-line", link: "tel:8273370028" },
                 ].map(({ icon, link }, idx) => (
                   <a
                     key={idx}
@@ -61,7 +61,7 @@ const Footer = () => {
                   <ul className="space-y-4 font-medium">
                     {[
                       { name: "Samsara Adventures", link: "https://www.instagram.com/samsara_adventures_official/" },
-                      { name: "Samsara Studio", link: "https://www.instagram.com/samsara.studio_/" },
+                      { name: "Samsara Studio", link: "https://www.samsarastudio.co" },
                
                     ].map((item, idx) => (
                       <li key={idx}>
@@ -101,19 +101,19 @@ const Footer = () => {
 
 
             {/* Contact Info */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 hidden lg:block">
               <h3 className="font-semibold text-lg mb-6 text-gray-100 dark:text-gray-100">Contact Us</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <i className="ri-map-pin-line text-lg text-white dark:text-white" />
                   <span className="text-sm font-medium text-gray-100 dark:text-indigo-100 hover:underline cursor-pointer">
-                    123, Near Vasant Kunj, Gandhi Market, Agra
+                  H.No C1 block D, New shivalik nagar, Haridwar Uttrakhand 249407
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="ri-phone-line text-lg text-white dark:text-white" />
                   <span className="text-sm font-medium text-gray-100 dark:text-indigo-100 hover:underline cursor-pointer">
-                    9855575465
+                  +91 8273370028
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -129,9 +129,9 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className=" py-4 mt-2">
+      <div className="relative z-10 py-4 mt-2">
         <div className="max-w-7xl mx-auto px-8">
-          <p className="text-center text-sm text-gray-100 dark:text-gray-100 font-medium">
+          <p className="text-center text-sm text-gray-100 font-medium">
             © 2025 GYS Technologies. All rights reserved.
           </p>
         </div>

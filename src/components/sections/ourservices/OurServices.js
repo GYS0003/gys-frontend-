@@ -16,51 +16,19 @@ import SoftwareDevelopmentProcess from './SoftwareDevelopmentProcess';
 import ThinkBuildGrow from './ThinkBuildGrow';
 import WhyChooseUs from './WhyChooseUs';
 const OurServices = () => {
-  const containerRef = useRef(null);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    let isScrolling = false;
-
-    const handleWheel = (e) => {
-      if (isScrolling) return;
-      isScrolling = true;
-
-      const direction = e.deltaY > 0 ? 1 : -1;
-      const sectionHeight = window.innerHeight;
-      const scrollTo = container.scrollTop + direction * sectionHeight;
-
-      container.scrollTo({
-        top: scrollTo,
-        behavior: 'smooth',
-      });
-
-      setTimeout(() => {
-        isScrolling = false;
-      }, 800); // Custom duration (ms)
-    };
-
-    container.addEventListener('wheel', handleWheel, { passive: false });
-    return () => container.removeEventListener('wheel', handleWheel);
-  }, []);
   return (
     <section
-    ref={containerRef}
     id='services'
-    className="h-screen overflow-y-scroll scroll-mt-24 scrollbar-hide snap-y snap-mandatory scroll-smooth"
-    style={{ scrollBehavior: 'smooth' }}
+    className="h-screen overflow-y-scroll scroll-mt-24 scrollbar-hide "
   >
-       <div className="absolute inset-0 z-0">
-    <div className="w-full h-full bg-white dark:bg-black bg-gradient-dark-figma " />
-  </div>
-        {/* <BreadCrumbs/> */}
-        <section className="snap-start"><Banner /></section>
-        <section className="snap-start"><ServicesWeOffer/></section>
-        <section className="snap-start"><SoftwareDevelopmentProcess/></section>
-         <section className="snap-start">  <ThinkBuildGrow/></section>
-        <section className="snap-start">  <WhyChooseUs/></section>
-        <section className="snap-start"><LetsCreateTogether/></section>
-        <section className="snap-start"><Footer/></section>
+        <Banner />
+        <ServicesWeOffer/>
+        <SoftwareDevelopmentProcess/>
+          <ThinkBuildGrow/>
+          <WhyChooseUs/>
+        <LetsCreateTogether/>
+        <Footer/>
     </section>
   )
 }

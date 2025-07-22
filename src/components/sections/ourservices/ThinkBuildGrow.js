@@ -12,7 +12,7 @@ const ThinkBuildGrow = () => {
   return (
     <section
       ref={ref}
-      className="min-h-screen relative z-10 flex flex-col justify-center items-center px-4 py-16 text-center text-white bg-gradient-to-b from-pink-700 to-purple-700 dark:bg-none"
+      className=" relative z-10 flex flex-col justify-center items-center px-4 py-30 text-center text-white bg-gradient-to-b from-pink-700 to-purple-700 dark:bg-none"
 
     >
       {/* Animated container */}

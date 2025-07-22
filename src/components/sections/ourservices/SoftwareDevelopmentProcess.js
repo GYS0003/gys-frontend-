@@ -55,7 +55,7 @@ const SoftwareDevelopmentProcess = () => {
   return (
     <section
       ref={ref}
-      className="min-h-screen flex flex-col justify-center items-center px-4 py-16 md:px-10 lg:px-20 relative z-10"
+      className=" flex flex-col justify-center items-center px-4 py-30 md:px-10 lg:px-20 relative z-10"
     >
       <motion.h2
         initial={{ opacity: 0, y: 40 }}

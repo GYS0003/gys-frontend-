@@ -133,7 +133,7 @@ const Testimonials = () => {
               {item.feedback}
             </p>
             <div className="flex justify-center gap-1 text-yellow-500 text-lg">
-              {Array.from({ length: item.rating }).map((_, i) => (
+              {Array.from({ length: 5 }).map((_, i) => (
                 <span key={i}>★</span>
               ))}
             </div>
