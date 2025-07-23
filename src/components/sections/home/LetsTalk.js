@@ -81,7 +81,10 @@ const GetInTouch = () => {
             </div>
             <div>
               <p className="font-semibold">Address</p>
-              <p className="text-sm max-w-[300px]">H.No C1 block D, New shivalik nagar, Haridwar Uttrakhand 249407</p>
+              <p className="text-sm max-w-[300px]"><span className="text-sm font-medium text-gray-700 dark:text-gray-100 hover:underline cursor-pointer">
+               {` Branch Office: Whitefield, Bangalore, India`} <br />
+                {`Branch Office: Dehradun, Uttarakhand, India`}
+              </span></p>
             </div>
           </div>
 

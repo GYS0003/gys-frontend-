@@ -62,7 +62,7 @@ const Footer = () => {
                     {[
                       { name: "Samsara Adventures", link: "https://www.instagram.com/samsara_adventures_official/" },
                       { name: "Samsara Studio", link: "https://www.samsarastudio.co" },
-               
+
                     ].map((item, idx) => (
                       <li key={idx}>
                         <a
@@ -107,13 +107,14 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <i className="ri-map-pin-line text-lg text-white dark:text-white" />
                   <span className="text-sm font-medium text-gray-100 dark:text-indigo-100 hover:underline cursor-pointer">
-                  H.No C1 block D, New shivalik nagar, Haridwar Uttrakhand 249407
+                    {`Branch Office: Whitefield, Bangalore, India`} <br />
+                    {`Branch Office: Dehradun, Uttarakhand, India`}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <i className="ri-phone-line text-lg text-white dark:text-white" />
                   <span className="text-sm font-medium text-gray-100 dark:text-indigo-100 hover:underline cursor-pointer">
-                  +91 8273370028
+                    +91 8273370028
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
