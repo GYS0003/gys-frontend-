@@ -5,7 +5,7 @@ import Header from '@/components/layout/header/Header'
 export const metadata = {
   title: 'GYS Technologies | Web, Mobile & Custom Software Solutions',
   description:
-    'GYS Technologies delivers cutting-edge web development, mobile apps, and enterprise software solutions tailored for startups and businesses in India and beyond.',
+    'GYS Technologies delivers web, mobile, and enterprise software solutions tailored for startups and businesses across India and beyond.',
   keywords: [
     'GYS Technologies',
     'Software Development Company India',
