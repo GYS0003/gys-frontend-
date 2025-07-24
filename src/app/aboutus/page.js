@@ -6,21 +6,24 @@ import AboutUs from '@/components/sections/aboutus/AboutUs';
 export const metadata = {
   title: 'About Us | GYS Technologies',
   description:
-    'Discover the story behind GYS Technologies, our mission, and how we deliver exceptional digital solutions globally.',
+    'Learn about GYS Technologies — our mission, values, and the team behind innovative digital solutions in web, mobile, and enterprise software development.',
   keywords: [
     'GYS Technologies',
-    'About GYS',
-    'Tech Company',
-    'Digital Solutions',
+    'About GYS Technologies',
     'Software Development Company',
-    'App Development India',
+    'Custom App Development',
+    'Tech Company India',
+    'Enterprise Software',
+    'Digital Innovation',
+    'Mobile App Company',
+    'Web Development India',
   ],
-  metadataBase: new URL('https://www.gystechnologies.com'),
+  metadataBase: new URL('https://www.gystechnologies.in'),
   openGraph: {
     title: 'About Us | GYS Technologies',
     description:
-      'Discover the story behind GYS Technologies, our mission, and how we deliver exceptional digital solutions globally.',
-    url: 'https://www.gystechnologies.com/about',
+      'Meet the minds behind GYS Technologies. Learn how our team crafts innovative software and digital experiences for clients worldwide.',
+    url: 'https://www.gystechnologies.in/aboutus',
     siteName: 'GYS Technologies',
     locale: 'en_IN',
     type: 'website',
@@ -37,12 +40,17 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'About Us | GYS Technologies',
     description:
-      'Explore who we are at GYS Technologies and how we innovate in the digital space.',
-    images: ['/assets/og/about-og.jpg'],
+      'Discover the journey and vision of GYS Technologies — a leader in web, mobile, and AI-powered software development.',
+    images: ['/assets/og/about-og.jpg'], 
     site: '@gystechnologies', 
   },
   alternates: {
-    canonical: 'https://www.gystechnologies.com/aboutus',
+    canonical: 'https://www.gystechnologies.in/aboutus',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
   },
 };
 
