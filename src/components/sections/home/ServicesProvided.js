@@ -100,9 +100,9 @@ const ServicesProvided = () => {
           <div className="relative z-10">
             <Link href="/services" passHref >
 
-              <h3 className="text-2xl font-extrabold text-center text-gray-800 dark:text-gray-100 mb-6">
+              <h1 className="text-2xl font-extrabold text-center text-gray-800 dark:text-gray-100 mb-6">
                 Tech Services
-              </h3>
+              </h1>
               <ul className="space-y-2 text-sm md:text-base">
                 {techItems.map((item, i) => (
                   <motion.li
