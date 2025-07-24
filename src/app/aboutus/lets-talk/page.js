@@ -4,47 +4,48 @@ import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 import BookCall from '@/components/sections/aboutus/LetsConnect/BookCall';
 export const metadata = {
-  title: 'GYS Technologies',
+  title: 'GYS Technologies | Custom Software & App Development Company',
   description:
-    'GYS Technologies - Empowering digital solutions through innovation and performance. We specialize in web, mobile, and enterprise software development.',
+    'GYS Technologies empowers businesses with innovative digital solutions. We specialize in web development, mobile apps, cloud platforms, and enterprise software.',
   keywords: [
     'GYS Technologies',
-    'Software Development',
-    'Web Development',
-    'App Development',
-    'Custom Software Solutions',
+    'Custom Software Development',
     'Mobile App Development',
+    'Web Development Company India',
+    'Enterprise Software Solutions',
+    'Cloud Development Services',
+    'App Developers India',
+    'Digital Transformation',
     'Tech Company India',
-    'Digital Transformation Services',
   ],
-  metadataBase: new URL('https://www.gystechnologies.com'),
+  metadataBase: new URL('https://www.gystechnologies.in'),
   alternates: {
-    canonical: 'https://www.gystechnologies.com',
+    canonical: 'https://www.gystechnologies.in',
   },
   openGraph: {
-    title: 'GYS Technologies',
+    title: 'GYS Technologies | Custom Software & App Development Company',
     description:
-      'Empowering digital solutions through innovation and performance. Discover custom web and app development with GYS Technologies.',
-    url: 'https://www.gystechnologies.com',
+      'Discover how GYS Technologies delivers scalable, performance-driven digital solutions. From web to mobile and cloud — we bring your vision to life.',
+    url: 'https://www.gystechnologies.in',
     siteName: 'GYS Technologies',
     locale: 'en_IN',
     type: 'website',
     images: [
       {
-        url: '', // Replace with actual path
+        url: '/assets/og/home-og.jpg', 
         width: 1200,
         height: 630,
-        alt: 'GYS Technologies',
+        alt: 'GYS Technologies Homepage',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GYS Technologies',
+    title: 'GYS Technologies | Web & App Development Experts',
     description:
-      'Custom software and app development services built for speed, scale, and success.',
-    site: '@gystechnologies', // Replace with your actual handle
-    images: [''], // Replace with actual path
+      'Partner with GYS Technologies for high-performance web, mobile, and cloud development solutions built for speed and scale.',
+    site: '@gystechnologies', 
+    images: ['/assets/og/home-og.jpg'], 
   },
   robots: {
     index: true,
@@ -52,6 +53,7 @@ export const metadata = {
     nocache: false,
   },
 };
+
 
 
 export default function Page() {
