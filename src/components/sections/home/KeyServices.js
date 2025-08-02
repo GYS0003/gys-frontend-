@@ -106,9 +106,9 @@ const KeyServices = () => {
         onMouseUp={handleMouseUp}
         style={{
           cursor: isDragging ? 'grabbing' : 'grab',
-          userSelect: 'none',
-          WebkitOverflowScrolling: 'touch',
-          scrollBehavior: 'smooth',
+          // userSelect: 'none',
+          // WebkitOverflowScrolling: 'touch',
+          // scrollBehavior: 'smooth',
         }}
       >
         {services.map((item, idx) => (
