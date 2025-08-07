@@ -4,7 +4,7 @@ import React from 'react'
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import GradientButton from "@/components/ui/GradientButton";
-import { verifyOTP, sendOTP, bookMeeting, fetchBooked, getTimeSlotsForDate } from "@/services/apis";
+import { verifyOTP, sendOTP, bookMeeting, fetchBooked, getTimeSlotsForDate, getALLSlots } from "@/services/apis";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -47,6 +47,7 @@ const BookCall = () => {
 
     const fetchBookedTimes = async (date) => {
         try {
+            const response = getALLSlots();
             const res = await getTimeSlotsForDate(date);
             if (res?.slots) {
                 setUnavailableTimes(res.slots);
