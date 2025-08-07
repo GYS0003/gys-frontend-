@@ -33,60 +33,59 @@ import DINEEASY4 from '@/assets/CaseStudy/DINEEASY4.jpg';
 
 const CASE_STUDY_DATA = [
   {
-    id: 'homestay-booking-app',
-    companyName: 'Homestay Booking App',
-    title: 'Revolutionizing Homestay Bookings with Automation',
-    subtitle: 'An integrated digital solution to streamline homestay bookings and enhance guest experiences',
+    id: 'mitroz-restaurant',
+    companyName: 'Mitroz Restaurant',
+    title: 'Digitally Transforming the Restaurant Experience',
+    subtitle: 'Empowering Mitroz with a modern food ordering and reservation platform',
     stats: [
       {
-        percentage: 70,
-        title: 'Increase in user',
-        subtitle: 'registration efficiency',
+        percentage: 65,
+        title: 'Reduction in order',
+        subtitle: 'processing time',
       },
       {
-        percentage: 90,
-        title: 'Improvement in',
-        subtitle: 'customer satisfaction',
+        percentage: 78,
+        title: 'Increase in table',
+        subtitle: 'reservation efficiency',
       },
     ],
     sections: [
       {
         title: 'Overview',
         image: TA1,
-        description: `We partnered with a prominent travel-tech client to transform their manual homestay booking system into a fully automated digital experience. The platform now serves hosts and travelers with seamless web and mobile interactions.`,
+        description: `Mitroz Restaurant sought to streamline its dine-in and online ordering services. We helped them build a full-stack platform that enables users to reserve tables, order meals, and receive real-time updates.`,
       },
       {
         title: 'Problem',
         image: TA2,
-        description: `Their legacy system relied heavily on manual interventions for host confirmations and guest communications. The absence of GPS support, customer reviews, and real-time booking visibility created inefficiencies and scalability challenges.`,
+        description: `Manual order taking and overbooking were frequent problems. The restaurant lacked visibility into reservations, causing poor customer experiences during peak hours.`,
       },
       {
         title: 'Solution',
         image: TA3,
-        description: `We delivered a robust web and mobile platform with real-time room availability, GPS integration, host dashboards, automated communication flows, and review management. Admins gained full control with a centralized dashboard.`,
+        description: `We built an intuitive platform that supports online reservations, real-time table tracking, and digital menu browsing. Staff receive alerts for new bookings and customers get instant confirmations.`,
       },
       {
         title: 'Conclusion',
         image: TA4,
-        description: `Within 3 months, user onboarding improved by 70%, and satisfaction scores rose by 90%. The client scaled operations effortlessly, boosted by increased automation and analytics capabilities.`,
+        description: `Mitroz Restaurant saw a 65% decrease in order delays and a 78% improvement in reservation flow, leading to better guest satisfaction and return visits.`,
       },
     ],
   },
- 
   {
-    id: 'samsara-studio',
-    companyName: 'Samsara Studio',
-    title: 'Samsara Studio – Creative Digital Marketing that Works',
-    subtitle: 'Helping Samsara Studio deliver performance-driven digital campaigns and client success',
+    id: 'hotel-booking',
+    companyName: 'Hotel Booking Platform',
+    title: 'Optimizing Hotel Bookings with a Unified Platform',
+    subtitle: 'A seamless experience for travelers to find and book stays effortlessly',
     stats: [
       {
-        percentage: 75,
-        title: 'Faster reservation',
-        subtitle: 'handling process',
+        percentage: 72,
+        title: 'Faster room',
+        subtitle: 'confirmation process',
       },
       {
-        percentage: 88,
-        title: 'Increase in repeat',
+        percentage: 85,
+        title: 'Increase in return',
         subtitle: 'customer bookings',
       },
     ],
@@ -94,66 +93,193 @@ const CASE_STUDY_DATA = [
       {
         title: 'Overview',
         image: DINEEASY1,
-        description: `Samsara Studio, a boutique digital marketing agency, sought to modernize client engagement and streamline campaign onboarding. We enabled a tailored platform to manage services, bookings, and results tracking—all from one place.`,
+        description: `We developed a hotel booking engine offering real-time availability, user reviews, and instant confirmation for a growing travel-tech business.`,
       },
       {
         title: 'Problem',
         image: DINEEASY2,
-        description: `Manual form-based onboarding and static service pages led to high bounce rates. Delayed communication and non-personalized workflows impacted customer retention and feedback.`,
+        description: `The earlier booking system lacked synchronization across devices, with no customer review system or instant availability. Bookings were lost due to delays.`,
       },
       {
         title: 'Solution',
         image: DINEEASY3,
-        description: `We built a conversion-first site with integrated OTP booking, service discovery flows, CRM integration, and analytics dashboards. Users could request services, schedule calls, and get updates in real-time.`,
+        description: `We built a mobile-first platform with user accounts, filters, maps integration, secure payments, and admin controls to approve and manage properties.`,
       },
       {
         title: 'Conclusion',
         image: DINEEASY4,
-        description: `Repeat bookings rose by 88%, with a 75% reduction in booking time. The new digital interface helped Samsara Studio close deals faster, improve client satisfaction, and expand their service footprint.`,
+        description: `Booking speed increased by 72%, and returning users grew by 85%. The platform saw high ratings from customers for ease of use and transparency.`,
       },
     ],
   },
   {
-    id: 'samsara-adventures',
-    companyName: 'Samsara Adventures',
-    title: 'Samsara Adventures – Personalized Travel at Scale',
-    subtitle: 'Transforming the travel experience through intuitive digital journeys and social-first discovery',
+    id: 'ghumakad-travel-booking',
+    companyName: 'Ghumakad Travel',
+    title: 'Ghumakad – Dynamic Travel Packages for Everyone',
+    subtitle: 'Bringing tailored and group travel experiences to life with tech',
     stats: [
       {
-        percentage: 68,
-        title: 'Boost in user',
-        subtitle: 'booking completion rate',
+        percentage: 80,
+        title: 'Uplift in user',
+        subtitle: 'engagement time',
       },
       {
-        percentage: 82,
-        title: 'Increase in social',
-        subtitle: 'media engagement',
+        percentage: 70,
+        title: 'Improvement in',
+        subtitle: 'booking conversion rate',
       },
     ],
     sections: [
       {
         title: 'Overview',
         image: SA1,
-        description: `Samsara Adventures is a premium travel planning brand known for crafting personalized, offbeat journeys. They needed a scalable platform to simplify trip discovery and booking—especially via mobile and social media.`,
+        description: `Ghumakad is a personalized travel booking platform offering customized trips and group packages. We created a fast, mobile-responsive portal supporting flexible itineraries.`,
       },
       {
         title: 'Problem',
         image: SA2,
-        description: `Their earlier site lacked personalization and mobile responsiveness. Leads from social campaigns dropped off due to clunky navigation, limited integration with messaging platforms, and poor booking visibility.`,
+        description: `The old system only allowed static listings. There was no personalization, package comparison, or real-time updates. The UX was slow, especially on mobile.`,
       },
       {
         title: 'Solution',
         image: SA3,
-        description: `We created a mobile-optimized platform with personalized itineraries, seamless Instagram and WhatsApp lead capture, dynamic suggestions, and blog content optimized for travel SEO and user intent.`,
+        description: `We introduced tailored booking flows, editable packages, payment gateway integration, and social media discovery features.`,
       },
       {
         title: 'Conclusion',
         image: SA4,
-        description: `Booking completions improved by 68%, and lead engagement from Instagram Stories and WhatsApp surged by 82%. The brand saw a noticeable uplift in inquiries and brand mentions across channels.`,
+        description: `Engagement increased by 80%, while booking rates went up by 70% within the first 2 months of launch. Ghumakad now stands out for user-first trip planning.`,
+      },
+    ],
+  },
+  {
+    id: 'jewelry-website',
+    companyName: 'Jewelry Website',
+    title: 'A Shimmering Jewelry Experience Online',
+    subtitle: 'Bringing elegance to e-commerce with virtual try-ons and stunning visuals',
+    stats: [
+      {
+        percentage: 60,
+        title: 'Improvement in customer retention',
+        subtitle: 'Due to personalized try-on experience',
+      },
+      {
+        percentage: 50,
+        title: 'Increase in online sales',
+        subtitle: 'Driven by high-resolution product previews',
+      },
+    ],
+    sections: [
+      {
+        title: 'Overview',
+        image: '',
+        description: `We built a sleek and modern jewelry e-commerce platform offering high-resolution product views, virtual try-on features, and secure payments.`,
+      },
+    ],
+  },
+  {
+    id: 'river-tiger',
+    companyName: 'River Tiger Resort',
+    title: 'A Nature-Immersive Resort Experience in Dehradun',
+    subtitle: 'Stay, explore, and celebrate with seamless online booking',
+    stats: [
+      {
+        percentage: 60,
+        title: 'Increase in direct bookings',
+        subtitle: 'Driven by intuitive UI and real-time availability',
+      },
+      {
+        percentage: 70,
+        title: 'Boost in adventure participation',
+        subtitle: 'Due to integrated add-on booking options',
+      }
+    ],
+    sections: [
+      {
+        title: 'Overview',
+        image: '',
+        description: `River Tiger Resort offers a full-fledged booking platform for luxurious stays, guided adventure activities, and event reservations. Guests can explore cottages, villas, and tents, check real-time availability, and book customized adventure experiences, all through a streamlined digital interface.`,
+      },
+    ],
+  },
+  
+  {
+    id: 'clothes-website',
+    companyName: 'Clothes Website',
+    title: 'Modern Clothing Storefront with Seasonal Collections',
+    subtitle: 'A responsive and stylish shopping experience for all',
+    stats: [
+      {
+        percentage: 55,
+        title: 'Boost in average session duration',
+        subtitle: 'Thanks to immersive UI and AR experience',
+      },
+      {
+        percentage: 48,
+        title: 'Growth in returning customer base',
+        subtitle: 'Driven by premium user experience',
+      },
+    ],
+    sections: [
+      {
+        title: 'Overview',
+        image: '',
+        description: `Fashion-forward site for men and women featuring seasonal launches, smart filters, cart, and streamlined checkout.`,
+      },
+    ],
+  },
+  {
+    id: 'taxi-application',
+    companyName: 'Taxi Application',
+    title: 'Real-Time Taxi Booking Platform',
+    subtitle: 'Instant rides with fare estimates and driver tracking',
+    stats: [
+      {
+        percentage: 75,
+        title: 'Decrease in ride wait time',
+        subtitle: 'Due to optimized driver matching',
+      },
+      {
+        percentage: 62,
+        title: 'Increase in successful trip completions',
+        subtitle: 'With real-time tracking and in-app communication',
+      },
+    ],
+    sections: [
+      {
+        title: 'Overview',
+        image: '',
+        description: `We designed a mobile-first ride-booking app offering real-time cab tracking, fare calculators, in-app chat, and secure payments.`,
+      },
+    ],
+  },
+  {
+    id: 'fashion-clothing',
+    companyName: 'Fashion Clothing',
+    title: 'Streetwear & Lifestyle Brand Website',
+    subtitle: 'Influencer drops, size guides, and interactive lookbooks',
+    stats: [
+      {
+        percentage: 69,
+        title: 'Boost in user engagement',
+        subtitle: 'Influenced by lookbook interactivity',
+      },
+      {
+        percentage: 52,
+        title: 'Improved product discoverability',
+        subtitle: 'Thanks to smart tagging and filters',
+      },
+    ],
+    sections: [
+      {
+        title: 'Overview',
+        image: '',
+        description: `A trendy fashion portal with influencer collabs, street style lookbooks, smart filtering, and personalized shopping experience.`,
       },
     ],
   }
 ];
+
 
 
 

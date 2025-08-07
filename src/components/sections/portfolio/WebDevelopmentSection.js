@@ -39,10 +39,11 @@ const projects = [
   {
     title: "River Tiger",
     description:
-      "An elegant online jewelry store offering curated collections with high-resolution images, secure checkout, and virtual try-on features.",
+      "A nature-inspired resort booking platform in Dehradun offering luxurious stays, adventure activities, and event experiences with real-time availability and seamless checkout.",
     image: RT,
-    gradient: "from-blue-400 to-cyan-500",
+    gradient: "from-green-500 to-emerald-600",
   },
+  
   {
     title: "Clothes Website",
     description:
