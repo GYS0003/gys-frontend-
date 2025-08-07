@@ -47,7 +47,7 @@ const BookCall = () => {
 
     const fetchBookedTimes = async (date) => {
         try {
-            const response = getALLSlots();
+            const response =await getALLSlots();
             const res = await getTimeSlotsForDate(date);
             if (res?.slots) {
                 setUnavailableTimes(res.slots);
